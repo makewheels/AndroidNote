@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+//test for some modify
         initView();
         addListeners();
         noteDao = GreenDaoApplication.getInstance().getDaoSession().getNoteDao();
