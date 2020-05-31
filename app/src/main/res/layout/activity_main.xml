@@ -10,7 +10,7 @@
         android:id="@+id/btn_add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="新增事项"
+        android:text="@string/new_todo"
         android:textSize="30sp" />
 
     <ListView

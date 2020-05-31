@@ -85,19 +85,21 @@ public class MainActivity extends AppCompatActivity {
                 final String noteContent = note.getContent();
                 long noteId = note.getId();
                 new AlertDialog.Builder(MainActivity.this)
-                        .setTitle("确定删除？")
+                        .setTitle(R.string.confirm_delete)
                         .setMessage(noteId + " : " + noteContent)
-                        .setPositiveButton("删除", new DialogInterface.OnClickListener() {
+                        .setPositiveButton(R.string.delete, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 noteDao.delete(noteList.get(position));
                                 noteList.remove(position);
                                 noteListData.remove(position);
                                 noteListAdapter.notifyDataSetChanged();
-                                Toast.makeText(MainActivity.this, "已删除：" + noteContent, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this,
+                                        R.string.delete_finish + ": "
+                                                + noteContent, Toast.LENGTH_SHORT).show();
                             }
                         })
-                        .setNegativeButton("取消", null)
+                        .setNegativeButton(R.string.cancel, null)
                         .show();
                 return true;
             }

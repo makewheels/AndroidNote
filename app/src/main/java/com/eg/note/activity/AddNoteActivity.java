@@ -40,13 +40,15 @@ public class AddNoteActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String content = et_note.getText().toString();
-                if (content.equals("") == false) {
+                if (!content.equals("")) {
                     Note note = new Note();
                     note.setContent(content);
                     noteDao.save(note);
                     finish();
                 } else {
-                    Toast.makeText(AddNoteActivity.this, "请输入内容！", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddNoteActivity.this,
+                            getString(R.string.please_enter) + "!",
+                            Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -13,9 +13,10 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="20dp"
         android:background="#F7F3D8"
-        android:hint="请输入内容"
-        android:paddingLeft="40dp"
+        android:hint="@string/please_enter"
+        android:paddingStart="40dp"
         android:paddingTop="10dp"
+        android:paddingEnd="40dp"
         android:paddingBottom="10dp"
         android:textColor="#1D2E7D"
         android:textSize="30sp" />
@@ -24,7 +25,7 @@
         android:id="@+id/btn_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="保存"
+        android:text="@string/save"
         android:textSize="30sp" />
 
 </LinearLayout>

@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Note</string>
+    <string name="app_name">Todo List</string>
+    <string name="please_enter">please enter</string>
+    <string name="save">save</string>
+    <string name="confirm_delete">Are you sure to delete?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_finish">Successfully deleted</string>
+    <string name="new_todo">New Todo</string>
 </resources>
