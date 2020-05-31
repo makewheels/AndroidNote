@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//test for some modify
+
         initView();
         addListeners();
         noteDao = GreenDaoApplication.getInstance().getDaoSession().getNoteDao();
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                                 noteListData.remove(position);
                                 noteListAdapter.notifyDataSetChanged();
                                 Toast.makeText(MainActivity.this,
-                                        R.string.delete_finish + ": "
+                                        getString(R.string.delete_finish) + ": "
                                                 + noteContent, Toast.LENGTH_SHORT).show();
                             }
                         })
